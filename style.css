@@ -13,7 +13,7 @@ body {
   background-size: 720px 700px,
     /* Resize top image to 100px by 100px */ 800px 700px; /* Resize bottom image to 150px by 150px */
   background-position: -10% 450%,
-    /* Show the top-left half of the first image */ 125% -330%; /* Show the bottom-right half of the second image */
+    /* Show the top-left half of the first image */ 125% -430%; /* Show the bottom-right half of the second image */
   background-color: hsl(185, 75%, 39%);
 }
 
