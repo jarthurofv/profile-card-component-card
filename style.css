@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: Kumbh Sans;
+  background: url("images/bg-pattern-top.svg") no-repeat top left,
+    /* Top-left image */ url("images/bg-pattern-bottom.svg") no-repeat bottom
+      right; /* Bottom-left image */
+  background-size: 720px 700px,
+    /* Resize top image to 100px by 100px */ 800px 700px; /* Resize bottom image to 150px by 150px */
+  background-position: -10% 450%,
+    /* Show the top-left half of the first image */ 125% -330%; /* Show the bottom-right half of the second image */
+  background-color: hsl(185, 75%, 39%);
+}
+
+.container {
+  width: 20rem;
+  margin: 8rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+header img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-top: 3.5rem;
+}
+
+main .img-vic {
+  position: absolute;
+  top: -3.3rem;
+  border-radius: 50%;
+  object-fit: cover;
+  width: 6rem;
+  border: 5px solid #fff;
+}
+
+main .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+main .header h2 {
+  color: hsl(229, 23%, 23%);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+main .header span {
+  color: hsl(227, 10%, 46%);
+  font-size: 1rem;
+}
+
+main p {
+  color: hsl(0, 0%, 59%);
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+footer {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 0.5px solid hsl(0, 2%, 84%);
+  padding: 1.5rem 0;
+  color: hsl(229, 23%, 23%);
+  font-size: 0.9rem;
+}
+
+.followers,
+.likes,
+.photos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  color: hsl(227, 10%, 46%);
+  font-size: 0.7rem;
+  margin-top: 0.2rem;
+}
